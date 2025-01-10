@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนการเกษียณอายุ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>แผนการเกษียณอายุ</h1>
+        <form id="retirement-form">
+            <label for="current-age">อายุปัจจุบัน:</label>
+            <input type="number" id="current-age" required>
+
+            <label for="retirement-age">อายุที่ต้องการเกษียณ:</label>
+            <input type="number" id="retirement-age" required>
+
+            <label for="current-savings">เงินออมปัจจุบัน (บาท):</label>
+            <input type="number" id="current-savings" required>
+
+            <label for="monthly-savings">เงินออมต่อเดือน (บาท):</label>
+            <input type="number" id="monthly-savings" required>
+
+            <label for="expected-return">อัตราผลตอบแทน (% ต่อปี):</label>
+            <input type="number" id="expected-return" required>
+
+            <button type="submit">คำนวณแผนการเกษียณอายุ</button>
+        </form>
+
+        <h2>แผนการเกษียณอายุ</h2>
+        <div id="retirement-plan"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

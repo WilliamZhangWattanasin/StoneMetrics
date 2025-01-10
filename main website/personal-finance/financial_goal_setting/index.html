@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การตั้งเป้าหมายทางการเงิน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>การตั้งเป้าหมายทางการเงิน</h1>
+        <form id="goal-form">
+            <label for="goalName">ชื่อเป้าหมาย:</label>
+            <input type="text" id="goalName" required>
+
+            <label for="goalAmount">จำนวนเงินเป้าหมาย (บาท):</label>
+            <input type="number" id="goalAmount" required>
+
+            <label for="currentSavings">เงินออมปัจจุบัน (บาท):</label>
+            <input type="number" id="currentSavings" required>
+
+            <label for="monthlyContribution">ยอดผ่อนต่อเดือน (บาท):</label>
+            <input type="number" id="monthlyContribution" required>
+
+            <button type="submit">ตั้งเป้าหมาย</button>
+        </form>
+
+        <h2>ผลการตั้งเป้าหมายทางการเงิน</h2>
+        <div id="goal-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

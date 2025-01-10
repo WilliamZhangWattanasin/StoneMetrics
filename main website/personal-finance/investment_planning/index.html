@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วางแผนการลงทุน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>วางแผนการลงทุน</h1>
+        <form id="investment-form">
+            <label for="investment-name">ชื่อการลงทุน:</label>
+            <input type="text" id="investment-name" required>
+
+            <label for="investment-amount">จำนวนเงินลงทุน (บาท):</label>
+            <input type="number" id="investment-amount" required>
+
+            <label for="expected-return">อัตราผลตอบแทน (% ต่อปี):</label>
+            <input type="number" id="expected-return" required>
+
+            <label for="investment-years">ระยะเวลาการลงทุน (ปี):</label>
+            <input type="number" id="investment-years" required>
+
+            <button type="submit">เพิ่มการลงทุน</button>
+        </form>
+
+        <h2>การลงทุนทั้งหมด</h2>
+        <table id="investment-table">
+            <thead>
+                <tr>
+                    <th>ชื่อการลงทุน</th>
+                    <th>จำนวนเงินลงทุน (บาท)</th>
+                    <th>อัตราผลตอบแทน (% ต่อปี)</th>
+                    <th>ระยะเวลาการลงทุน (ปี)</th>
+                    <th>ผลตอบแทนรวม (บาท)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2 id="total-investment-amount">ยอดลงทุนรวมทั้งหมด: 0 บาท</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

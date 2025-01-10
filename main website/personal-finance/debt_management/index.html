@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการหนี้สิน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>จัดการหนี้สิน</h1>
+        <form id="debt-form">
+            <label for="debt-name">ชื่อหนี้:</label>
+            <input type="text" id="debt-name" required>
+
+            <label for="total-debt">จำนวนหนี้ (บาท):</label>
+            <input type="number" id="total-debt" required>
+
+            <label for="monthly-payment">ยอดชำระต่อเดือน (บาท):</label>
+            <input type="number" id="monthly-payment" required>
+
+            <button type="submit">เพิ่มหนี้</button>
+        </form>
+
+        <h2>หนี้สินทั้งหมด</h2>
+        <table id="debt-table">
+            <thead>
+                <tr>
+                    <th>ชื่อหนี้</th>
+                    <th>ยอดหนี้รวม (บาท)</th>
+                    <th>ยอดชำระต่อเดือน (บาท)</th>
+                    <th>เดือนที่ใช้ในการชำระ</th>
+                    <th>สถานะ</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2 id="total-debt-amount">ยอดหนี้รวมทั้งหมด: 0 บาท</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
