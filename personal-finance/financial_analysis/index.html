@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การวิเคราะห์ทางการเงิน</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>การวิเคราะห์ทางการเงิน</h1>
+        <form id="financial-analysis-form">
+            <label for="income">รายได้ประจำเดือน (บาท):</label>
+            <input type="number" id="income" required>
+
+            <label for="expenses">ค่าใช้จ่ายประจำเดือน (บาท):</label>
+            <input type="number" id="expenses" required>
+
+            <label for="savings">เงินออมปัจจุบัน (บาท):</label>
+            <input type="number" id="savings" required>
+
+            <button type="submit">วิเคราะห์การเงิน</button>
+        </form>
+
+        <h2>ผลการวิเคราะห์ทางการเงิน</h2>
+        <div id="financial-analysis-result"></div>
+        <canvas id="financial-chart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
